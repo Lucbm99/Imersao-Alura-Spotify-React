@@ -1,0 +1,36 @@
+.footer-area {
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(to right, #1FDF64, #fff);
+    line-height: 25px;
+    position: fixed;
+    bottom: 1rem;
+    left: 1rem;
+    width: 96%;
+    padding: 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: "DM Sans", sans-serif;;
+}
+
+.footer__button {
+    background-color: #111;
+    color: #fff;
+    border-radius: 3rem;
+    font-size: 1rem;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: none;
+    padding: 1rem;
+    border: 0px;
+    width: auto;
+    cursor: pointer;
+}
+
+.footer__button span {
+    padding: 1rem;
+}
+
+.footer__button:hover {
+    text-decoration: underline;
+}
