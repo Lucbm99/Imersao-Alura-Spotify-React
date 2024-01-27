@@ -1,4 +1,4 @@
-# DevsFood-React
+# Imersão Alura - Clone Spotify (React)
 Aplicação para fins de estudos da imersão Front End, organizada pela Alura. A aplicação desenvolvida foi um clone de uma página do Spotify. O código feito é utilizando a biblioteca React. Existe outro repisitório que utiliza as tecnologias HTML, CSS e JS (https://github.com/Lucbm99/Imersao-Alura-Spotify)
 
 
