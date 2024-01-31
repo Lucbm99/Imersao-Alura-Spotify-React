@@ -7,7 +7,7 @@ const Footer = () => {
             <div className="footer-area">
                 Testar o Premium de graça<br />
                 Inscreva-se para curtir música ilimitada e podcasts só com alguns anúncios. Não precisa de cartão de crédito.
-                <button class="footer__button">
+                <button className="footer__button">
                     <span>Inscreva-se grátis!</span>
                 </button>
             </div>
