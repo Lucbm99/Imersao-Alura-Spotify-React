@@ -21,11 +21,11 @@ const Main = () => {
         const currentHour = new Date().getHours();
     
         if (currentHour >= 5 && currentHour < 12) {
-            setGreeting('Bom dia');
+            setGreeting('Bom dia 🌥️');
         } else if (currentHour >= 12 && currentHour < 18) {
-            setGreeting('Boa tarde');
+            setGreeting('Boa tarde ☀️');
         } else {
-            setGreeting('Boa noite');
+            setGreeting('Boa noite 🌙');
         }
     }, []);
     
