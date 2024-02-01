@@ -9,7 +9,7 @@ const Header = () => {
     const [searchResults, setSearchResults] = useState([]);
     const [error, setError] = useState(null);
     const [loading, setLoading] = useState(false);
-    const baseURL = "https://api-artists-lucbm99.vercel.app/api/artists";
+    const baseURL = "https://my-json-server.typicode.com/Lucbm99/API-Artists-Spotify/artists";
     
     useEffect(() => {
         const fetchData = async () => {
