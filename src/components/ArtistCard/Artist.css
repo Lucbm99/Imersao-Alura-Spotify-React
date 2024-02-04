@@ -1,10 +1,8 @@
 .card {
-    background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    margin: 16px;
-    width: 300px;
+    margin: 1rem;
   }
   
   .card-image {
@@ -13,7 +11,8 @@
   }
   
   .card-content {
-    padding: 16px;
+    padding: 2rem;
+    text-align: center;
   }
   
   .artist-name {

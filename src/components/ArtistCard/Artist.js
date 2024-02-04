@@ -6,8 +6,8 @@ function ArtistCard({ artist }) {
         <div className="card">
             <img src={artist.urlImg} alt={artist.name} />
             <div className="card-content">
-                <h2>{artist.name}</h2>
-                <p>Genre: {artist.genre}</p>
+                <h2>Nome: {artist.name}</h2><br />
+                <p>Gênero: {artist.genre}</p>
             </div>
         </div>
     );

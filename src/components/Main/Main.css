@@ -49,12 +49,12 @@
 /* FIM SCROLL */
 
 .offer__list-item {
-    display: grid;
-    justify-items: center;
+    /* display: grid; */
+    /* justify-items: center;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: 16px;
     gap: 16px;
-    margin-bottom: 16px; 
+    margin-bottom: 16px;  */
 
     /* CODIGO COM JS CALCULANDO OS CARDS POR COLUNA */
     /* display: grid; /* define o modelo de layout do elemento como uma grade */
@@ -79,16 +79,16 @@
     font-weight: 700;
 }
 
-.card-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Four cards per line */
+    gap: 20px; /* Gap between cards */
 }
 
 .card {
-    /* Adjust card width to fit four cards per line */
-    width: calc(25% - 20px); /* 20px margin between cards */
+    width: calc(80% - 20px); /* 20px margin between cards */
     margin-bottom: 20px; /* Margin between rows */
+    background-color: #3BBF5A;
 }
 
 /* FIM COLOR CARDS */
@@ -97,6 +97,7 @@
     height: auto;
     width: 100%;
     border-radius: 10rem;
+    margin-top: 1rem;
 }
 
 /* CARD ARTISTA */

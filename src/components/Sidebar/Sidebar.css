@@ -173,6 +173,7 @@
 
 .section-playlist__content .section-playlist__button:hover {
     text-decoration: underline;
+    transform: scale(1.04);
 }
 
 .sidebar .cookies {
@@ -205,4 +206,5 @@
 
 .languages .languages__button:hover {
     text-decoration: underline;
+    transform: scale(1.04);
 }
