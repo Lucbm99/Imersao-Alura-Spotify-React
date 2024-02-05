@@ -1,18 +1,9 @@
 import React, { useEffect, useState } from 'react';
-
 import ArtistCard from '../ArtistCard/Artist';
 import './Main.css';
 
-const Main = () => {
+const Main = ({ filteredArtists }) => {
     const [greeting, setGreeting] = useState('');
-    const [artists, setArtists] = useState([]);
-
-    useEffect(() => {
-        fetch('https://my-json-server.typicode.com/Lucbm99/API-Artists-Spotify/artists')
-            .then(response => response.json())
-            .then(data => setArtists(data))
-            .catch(error => console.error('Error fetching data:', error));
-    }, []);
 
     useEffect(() => {
         const currentHour = new Date().getHours();
@@ -25,8 +16,7 @@ const Main = () => {
             setGreeting('Boa noite 🌙');
         }
     }, []);
-    
-    
+
     return (
         <main>
             <div className="playlist-container">
@@ -37,42 +27,25 @@ const Main = () => {
                         </div>
                         <h2 className="session">Navegar por todas as seções</h2>
                     </div>
+                </div>
 
-                    <div className="offer__scroll-container">
-                        <div className="offer__list">
-                            <section className="offer__list-item">
+                <div className="offer__scroll-container">
+                    <div className="offer__list">
+                        <section className="offer__list-item">
+                            {filteredArtists.length === 0 ? (
+                                <p>Loading...</p>
+                            ) : (
                                 <div className="cards-container">
-                                    {artists.map(artist => (
+                                    {filteredArtists.map(artist => (
                                         <ArtistCard key={artist.id} artist={artist} />
-                                    ))}                      
-                                </div>              
-                            </section>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div id="result-artist" className="hidden">
-                    <div className="grid-container">
-                        <div className="artist-card" id="">
-                            <div className="card-img">
-                                <img id="artist-img" className="artist-img" />
-                                <div className="play">
-                                    <span className="fa fa-solid fa-play"></span>
+                                    ))}
                                 </div>
-                            </div>
-                            <div className="card-text">
-                                <a title="Foo Fighters" className="vst" href=""></a>
-                                <span className="artist-name" id="artist-name"></span>
-                                <span className="artist-categorie" id="artist-categorie"></span>
-                            </div>
-                        </div>
+                            )}
+                        </section>
                     </div>
                 </div>
-
             </div>
         </main>
-
     )
 }
 

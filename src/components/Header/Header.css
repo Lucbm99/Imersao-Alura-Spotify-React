@@ -106,3 +106,7 @@
     transform: scale(1.04);
     text-decoration: underline;
 }
+
+.loading {
+    color: #fff;
+}
