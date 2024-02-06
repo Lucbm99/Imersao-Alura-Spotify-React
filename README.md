@@ -28,7 +28,7 @@ Npm: https://www.npmjs.com/
 
 ## 3 - Feita a instalação do npm, é necessário digitar o comando npm start, para abrir a aplicação, que estará disponível em http://localhost:3000 em seu computador.
 
-![image](https://github.com/Lucbm99/Imersao-Alura-Spotify-React/assets/45500959/2d044ea4-244c-45ae-84a2-121e7c36de69)
+![image](https://github.com/Lucbm99/Imersao-Alura-Spotify-React/assets/45500959/2c3b17ba-82c0-4170-8144-e73b459ab937)
 
 
 
