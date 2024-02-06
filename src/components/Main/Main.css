@@ -94,11 +94,15 @@
 /* FIM COLOR CARDS */
 
 .offer__list-item img {
+    display: flex;
     height: auto;
-    width: 100%;
+    width: 60%;
     border-radius: 10rem;
     margin-top: 1rem;
+    margin: 0 auto;
+    margin-top: 1rem;
 }
+
 
 /* CARD ARTISTA */
 
