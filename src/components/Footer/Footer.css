@@ -2,13 +2,13 @@
     display: flex;
     justify-content: space-between;
     background: linear-gradient(to right, #1FDF64, #fff);
-    line-height: 25px;
+    line-height: 1.5625rem;
     position: fixed;
     bottom: 1rem;
     left: 1rem;
     width: 96%;
     padding: 1rem;
-    border-radius: 10px;
+    border-radius: 0.625rem;
     cursor: pointer;
     font-family: "DM Sans", sans-serif;;
 }
@@ -22,7 +22,7 @@
     text-decoration: none;
     text-transform: none;
     padding: 1rem;
-    border: 0px;
+    border: 0rem;
     width: auto;
     cursor: pointer;
 }

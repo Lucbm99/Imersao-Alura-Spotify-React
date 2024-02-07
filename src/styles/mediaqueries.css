@@ -1,0 +1,27 @@
+@media (min-width: 320px) and (max-width: 480px) {
+  /* media query utilizado para smartphones */
+  .sidebar, .header__navigation .navigation .arrow-left, .header__navigation .navigation .arrow-right, .footer-area {
+    display: none;
+  }
+
+  .header__search {
+    width: 7.75rem;
+  }
+  .main-container {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  
+}
+@media (min-width: 481px) and (max-width: 768px) {
+  /* media query utilizado para smartphones e iPads */
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* media query utilizado para tablets e notebooks */
+}
+@media (min-width: 1024px) and (max-width: 1440px) {
+  /* media query utilizado para notebooks e computadores desktops */
+}
+@media (min-width: 1441px) {
+  /* media query utilizado para computadores maiores */
+}

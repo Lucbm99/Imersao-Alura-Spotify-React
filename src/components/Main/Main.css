@@ -8,9 +8,9 @@
 /* PLAYLIST */
 .playlist-container {
     height: 68vh;
-    padding-top: 16px;
-    margin: 10px;
-    border-radius: 10px;
+    padding-top: 1rem;
+    margin: 0.625rem;
+    border-radius: 0.625rem;
     background-color: #000;
 }
 
@@ -20,9 +20,9 @@
 
 .playlist #greeting {
     color: #1FDF64;
-    font-size: 32px;
+    font-size: 2rem;
     font-weight: 700;
-    margin-bottom: 48px;
+    margin-bottom: 3rem;
 }
 
 .playlist .session {
@@ -35,12 +35,12 @@
 /* SCROLL */
 .offer__scroll-container {
     max-height: 43vh;
-    margin: 24px;
+    margin: 1.5rem;
     overflow-y: auto;
 }
 
 .offer__scroll-container::-webkit-scrollbar {
-    width: 1px;
+    width: 0.0625rem;
 }
 
 .offer__scroll-container::-webkit-scrollbar-thumb {
@@ -66,28 +66,28 @@
 .cards {
     position: relative;
     width: 100%;
-    height: 200px;
+    height: 12.5rem;
     overflow: hidden;
-    border-radius: 8px;
+    border-radius: 0.5rem;
 }
 
 .cards span {
-    padding: 16px;
+    padding: 1rem;
     position: absolute;
     color: #fff;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 700;
 }
 
 .cards-container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Four cards per line */
-    gap: 20px; /* Gap between cards */
+    gap: 1.25rem; /* Gap between cards */
 }
 
 .card {
-    width: calc(80% - 20px); /* 20px margin between cards */
-    margin-bottom: 20px; /* Margin between rows */
+    width: calc(80% - 1.25rem); /* 1.25rem margin between cards */
+    margin-bottom: 1.25rem; /* Margin between rows */
     background-color: #3BBF5A;
 }
 
@@ -111,19 +111,19 @@
 }
 
 .grid-container {
-    grid-gap: 24px;
+    grid-gap: 1.5rem;
     display: grid;
     grid-template-columns: repeat(5, minmax(0, 1fr));
-    min-width: 372px;
+    min-width: 23.25rem;
 }
 
 .artist-card {
     background: #fff;
-    border-radius: 8px;
+    border-radius: 0.5rem;
     -ms-flex: 1;
     flex: 1;
     isolation: isolate;
-    padding: 16px;
+    padding: 1rem;
     position: relative;
     transition: background-color 0.3s ease;
     width: 100%;
@@ -156,7 +156,7 @@
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-    min-height: 62px;
+    min-height: 3.875rem;
 }
 
 .card-text a {
@@ -167,10 +167,10 @@
 
 .artist-name {
     box-sizing: border-box;
-    margin-block: 0px;
-    font-size: 16px;
+    margin-block: 0rem;
+    font-size: 1rem;
     font-weight: 700;
-    padding-block-end: 8px;
+    padding-block-end: 0.5rem;
     color: #6a6a6a;
     font-family: "DM Sans", sans-serif;
 }
@@ -187,27 +187,27 @@
 
 .play .fa-play {
     position: absolute;
-    right: 10px;
-    top: 120px;
-    padding: 18px;
+    right: 0.625rem;
+    top: 7.5rem;
+    padding: 1.125rem;
     background-color: #1db954;
     border-radius: 100%;
-    font-size: 14px;
+    font-size: 0.875rem;
     opacity: 0;
     transition: all ease 0.4s;
 }
 
 .artist-card:hover .play .fa-play {
     opacity: 1;
-    transform: translateY(-20px);
+    transform: translateY(-1.25rem);
 }
 
 .play .fa-play:hover {
-    padding: 20px;
+    padding: 1.25rem;
     cursor: pointer;
 }
 
 #result-artist {
-    padding: 20px 40px;
+    padding: 1.25rem 2.5rem;
 }
 /* FIM CARD ARTISTA */
