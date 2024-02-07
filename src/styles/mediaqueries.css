@@ -1,27 +1,251 @@
 @media (min-width: 320px) and (max-width: 480px) {
-  /* media query utilizado para smartphones */
-  .sidebar, .header__navigation .navigation .arrow-left, .header__navigation .navigation .arrow-right, .footer-area {
+  .sidebar {
     display: none;
   }
 
-  .header__search {
-    width: 7.75rem;
-  }
   .main-container {
-    margin-left: 0px;
-    margin-right: 0px;
+    margin-left: 0rem;
+    margin-right: 0rem;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .header__navigation {
+    max-width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .header__search {
+    width: 100%;
+  }
+
+  .header__search input {
+    padding-right: 0;
+  }
+
+  .loading {
+    display: none;
+  }
+
+  .header__login {
+    margin-top: 2rem;
   }
   
+  .header__login .subscribe {
+    margin-right: 1rem;
+  }
+
+  .main-container .playlist-container {
+    width: 95%;
+    height: 100%;
+  }
+
+  .offer__list-item {
+    grid-template-columns: 1fr;
+    height: 100%;
+  }
+
+  .offer__scroll-container {
+    overflow-y: auto;
+    max-height: 100vh;
+  }
+
+  footer {
+    display: none;
+  }
+
+  .navigation {
+    gap: 0.2;
+    margin: 0 0.5rem 0 0.5rem;
+  }
+
+  .login {
+    margin: 0;
+  }
+
+  .signup {
+    display: none;
+  }
+  .grid-container {
+    grid-template-columns: 1fr 1fr;
+  }
 }
-@media (min-width: 481px) and (max-width: 768px) {
-  /* media query utilizado para smartphones e iPads */
+
+@media screen and (width > 480px) and (width <= 780px) {
+  .sidebar {
+    display: none;
+  }
+
+  .header__navigation {
+    width: 93%;
+    height: 100%;
+  }
+
+  .header__search {
+    margin: 0;
+    width: 40%;
+  }
+
+  .header__search input {
+    padding-right: 0;
+  }
+
+  .main-container .playlist-container {
+    width: 93%;
+    height: 100%;
+  }
+
+  .offer__list-item {
+    grid-template-columns: 1fr 1fr;
+    height: 100%;
+  }
+
+  .offer__scroll-container {
+    overflow-y: visible;
+    max-height: 100vh;
+  }
+
+  footer {
+    display: none;
+  }
+  .grid-container {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
-@media (min-width: 768px) and (max-width: 1024px) {
-  /* media query utilizado para tablets e notebooks */
+
+@media screen and (width > 780px) and (width <= 1015px) {
+  .sidebar {
+    width: 30%;
+  }
+
+  .header__navigation {
+    width: 64%;
+    height: 100%;
+  }
+
+  .navigation {
+    margin-right: 0.5rem;
+  }
+
+  .header__search {
+    margin: 0;
+    width: 40%;
+  }
+
+  .header__search input {
+    padding-right: 0;
+  }
+
+  .main-container .playlist-container {
+    width: 64%;
+    height: 100%;
+  }
+
+  .offer__list-item {
+    grid-template-columns: 1fr 1fr;
+    height: 100%;
+  }
+
+  .offer__scroll-container {
+    overflow-y: visible;
+    max-height: 100vh;
+    margin: 1rem;
+  }
+  .grid-container {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
-@media (min-width: 1024px) and (max-width: 1440px) {
-  /* media query utilizado para notebooks e computadores desktops */
+
+@media screen and (width > 1015px) and (width <= 1040px) {
+  .sidebar {
+    width: 23%;
+  }
+
+  .header__navigation {
+    width: 72%;
+    height: 100%;
+  }
+
+  .navigation {
+    margin-right: 0.5rem;
+  }
+
+  .header__search {
+    margin: 0;
+    width: 50%;
+  }
+
+  .header__search input {
+    padding-right: 0;
+  }
+
+  .main-container .playlist-container {
+    width: 72%;
+    height: 100%;
+  }
+
+  .offer__list-item {
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 100%;
+  }
+
+  .offer__scroll-container {
+    overflow-y: visible;
+    max-height: 100vh;
+    margin: 1rem;
+  }
+  
+  .artist-card {
+    width: 100%;
+  }
+  .grid-container {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
 }
-@media (min-width: 1441px) {
-  /* media query utilizado para computadores maiores */
+
+@media screen and (width > 1040px) and (width <= 1360px) {
+  .sidebar {
+    width: 23%;
+  }
+
+  .header__navigation {
+    width: 72%;
+    height: 100%;
+  }
+
+  .navigation {
+    margin-right: 0.5rem;
+  }
+
+  .header__search {
+    margin: 0;
+    width: 50%;
+  }
+
+  .header__search input {
+    padding-right: 0;
+  }
+
+  .main-container .playlist-container {
+    width: 72%;
+    height: 100%;
+  }
+
+  .offer__list-item {
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 100%;
+  }
+
+  .offer__scroll-container {
+    overflow-y: visible;
+    max-height: 100vh;
+    margin: 1rem;
+  }
+  
+  .grid-container {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
 }
