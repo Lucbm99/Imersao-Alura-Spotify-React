@@ -3,13 +3,6 @@
     display: none;
   }
 
-  .main-container {
-    margin-left: 0rem;
-    margin-right: 0rem;
-    max-width: 100%;
-    height: auto;
-  }
-
   .header__navigation {
     max-width: 100%;
     height: auto;
@@ -36,6 +29,13 @@
   
   .header__login .subscribe {
     margin-right: 1rem;
+  }
+
+  .main-container {
+    margin-left: 0rem;
+    margin-right: 0rem;
+    max-width: 100%;
+    height: auto;
   }
 
   .main-container .playlist-container {
@@ -80,22 +80,31 @@
   }
 
   .header__navigation {
-    width: 93%;
-    height: 100%;
+    max-width: 95%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
 
   .header__search {
-    margin: 0;
-    width: 40%;
+    width: 60%;
   }
 
   .header__search input {
     padding-right: 0;
   }
 
+  .main-container {
+    margin-left: 0rem;
+    margin-right: 0rem;
+    max-width: 100%;
+    height: auto;
+  }
+
   .main-container .playlist-container {
-    width: 93%;
-    height: 100%;
+    max-width: 100%;
+    height: auto;
   }
 
   .offer__list-item {
@@ -104,26 +113,28 @@
   }
 
   .offer__scroll-container {
-    overflow-y: visible;
+    overflow-y: auto;
     max-height: 100vh;
   }
 
   footer {
     display: none;
   }
+
   .grid-container {
     grid-template-columns: 1fr 1fr 1fr;
   }
+
 }
 
 @media screen and (width > 780px) and (width <= 1015px) {
   .sidebar {
-    width: 30%;
+    display: none;
   }
 
   .header__navigation {
-    width: 64%;
-    height: 100%;
+    max-width: 95%;
+    height: auto;
   }
 
   .navigation {
@@ -131,17 +142,23 @@
   }
 
   .header__search {
-    margin: 0;
-    width: 40%;
+    width: 70%;
   }
 
   .header__search input {
     padding-right: 0;
   }
 
+  .main-container {
+    margin-left: 0rem;
+    margin-right: 0rem;
+    max-width: 100%;
+    height: auto;
+  }
+
   .main-container .playlist-container {
-    width: 64%;
-    height: 100%;
+    max-width: 98%;
+    height: auto;
   }
 
   .offer__list-item {
@@ -150,13 +167,19 @@
   }
 
   .offer__scroll-container {
-    overflow-y: visible;
+    overflow-y: auto;
     max-height: 100vh;
     margin: 1rem;
   }
+  
   .grid-container {
     grid-template-columns: 1fr 1fr 1fr;
   }
+
+  .footer-area {
+    max-width: 92%;
+  }
+
 }
 
 @media screen and (width > 1015px) and (width <= 1040px) {
@@ -165,8 +188,8 @@
   }
 
   .header__navigation {
-    width: 72%;
-    height: 100%;
+    max-width: 95%;
+    height: auto;
   }
 
   .navigation {
@@ -174,8 +197,7 @@
   }
 
   .header__search {
-    margin: 0;
-    width: 50%;
+    width: 70%;
   }
 
   .header__search input {
@@ -183,8 +205,8 @@
   }
 
   .main-container .playlist-container {
-    width: 72%;
-    height: 100%;
+    max-width: 98%;
+    height: auto;
   }
 
   .offer__list-item {
@@ -193,7 +215,7 @@
   }
 
   .offer__scroll-container {
-    overflow-y: visible;
+    overflow-y: auto;
     max-height: 100vh;
     margin: 1rem;
   }
@@ -204,48 +226,9 @@
   .grid-container {
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
-}
 
-@media screen and (width > 1040px) and (width <= 1360px) {
-  .sidebar {
-    width: 23%;
+  .footer-area {
+    max-width: 94%;
   }
 
-  .header__navigation {
-    width: 72%;
-    height: 100%;
-  }
-
-  .navigation {
-    margin-right: 0.5rem;
-  }
-
-  .header__search {
-    margin: 0;
-    width: 50%;
-  }
-
-  .header__search input {
-    padding-right: 0;
-  }
-
-  .main-container .playlist-container {
-    width: 72%;
-    height: 100%;
-  }
-
-  .offer__list-item {
-    grid-template-columns: 1fr 1fr 1fr;
-    height: 100%;
-  }
-
-  .offer__scroll-container {
-    overflow-y: visible;
-    max-height: 100vh;
-    margin: 1rem;
-  }
-  
-  .grid-container {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-  }
 }

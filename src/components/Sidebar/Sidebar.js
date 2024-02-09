@@ -57,7 +57,7 @@ const Sidebar = () => {
                 <div className="languages">
                     <button className="languages__button">
                         <span className="fa fa-globe"></span>
-                        <span>Português do Brasil</span>
+                        <span className="portuguese">Português do Brasil</span>
                     </button>
                 </div>
             </div>
