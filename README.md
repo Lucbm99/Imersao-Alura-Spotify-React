@@ -33,7 +33,7 @@ Npm: https://www.npmjs.com/
 
 
 ## 📦 Status da aplicação
-🚧  Em andamento 🚧
+🚧 Finalizada 🚧
 
 Link para acesso: https://spotify-imersao-alura-pi.vercel.app/
 
